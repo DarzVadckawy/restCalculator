@@ -8,23 +8,36 @@ import java.math.BigDecimal;
 
 /**
  * @author Dário Silvano Maxaieie
+ * This is the model of the Calculator to future use creating, manipulating and storing the calculations
  */
 public class Calculator {
 
+    private int id;
     private BigDecimal a;
     private BigDecimal b;
+    private BigDecimal result;
     private char operator;
 
     public Calculator() {
     }
 
 
-    public Calculator(BigDecimal a, BigDecimal b, char operator) {
+    public Calculator(int id, BigDecimal a, BigDecimal b, BigDecimal result, char operator) {
+        this.id = id;
         this.a = a;
         this.b = b;
+        this.result = result;
         this.operator = operator;
     }
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public BigDecimal getA() {
         return a;
@@ -40,6 +53,14 @@ public class Calculator {
 
     public void setB(BigDecimal b) {
         this.b = b;
+    }
+
+    public BigDecimal getResult() {
+        return result;
+    }
+
+    public void setResult(BigDecimal result) {
+        this.result = result;
     }
 
     public char getOperator() {

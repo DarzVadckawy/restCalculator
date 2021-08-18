@@ -19,6 +19,7 @@ import java.util.logging.Logger;
 
 /**
  * @author Dário Silvano Maxaieie
+ * This is the rest controller of the calculator with the endpoints of the operations
  */
 @RestController
 public class CalculatorController {
@@ -30,6 +31,11 @@ public class CalculatorController {
     Logger logger = Logger.getLogger(getClass().getName());
 
 
+    /**
+     * @param a this is the first operand
+     * @param b this is the second operand
+     * @return The sum of the two parameters (a & b) as a JSON
+     */
     @GetMapping(value="/sum")
     @ResponseBody
     public ResponseEntity<Map<String,Object>> calcSum(@RequestParam(value = "a") String a,
@@ -61,6 +67,11 @@ public class CalculatorController {
     }
 
 
+    /**
+     * @param a this is the first operand
+     * @param b this is the second operand
+     * @return The difference of the two parameters (a & b) as a JSON
+     */
     @GetMapping(value="/difference")
     public ResponseEntity<Map<String,Object>> calcDifference(@RequestParam(value = "a") String a,
                                                              @RequestParam(value = "b") String b){
@@ -90,6 +101,11 @@ public class CalculatorController {
     }
 
 
+    /**
+     * @param a this is the first operand
+     * @param b this is the second operand
+     * @return The product of the two parameters (a & b) as a JSON
+     */
     @GetMapping(value="/product")
     public ResponseEntity<Map<String,Object>> calcProduct(@RequestParam(value = "a") String a,
                                                           @RequestParam(value = "b") String b){
@@ -119,6 +135,12 @@ public class CalculatorController {
     }
 
 
+
+    /**
+     * @param a this is the first operand
+     * @param b this is the second operand
+     * @return The division of the two parameters (a & b) as a JSON
+     */
     @GetMapping(value="/division")
     public ResponseEntity<Map<String,Object>> calcDivision(@RequestParam(value = "a") String a,
                                                            @RequestParam(value = "b") String b){
