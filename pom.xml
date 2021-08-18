@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>co.mz</groupId>
 	<artifactId>restCalculator</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>restCalculator</name>
 	<description>restCalculator</description>
 	<properties>
