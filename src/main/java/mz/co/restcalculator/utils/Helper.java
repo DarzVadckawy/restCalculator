@@ -1,4 +1,4 @@
-package co.mz.restcalculator.utils;
+package mz.co.restcalculator.utils;
 
 
 /**

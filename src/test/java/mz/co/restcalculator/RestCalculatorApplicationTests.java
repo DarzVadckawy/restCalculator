@@ -1,4 +1,4 @@
-package co.mz.restcalculator;
+package mz.co.restcalculator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

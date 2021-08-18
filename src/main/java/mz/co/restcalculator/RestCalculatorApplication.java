@@ -1,4 +1,4 @@
-package co.mz.restcalculator;
+package mz.co.restcalculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package co.mz.restcalculator.service;
+package mz.co.restcalculator.service;
 
 
 import org.springframework.stereotype.Service;
