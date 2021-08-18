@@ -10,18 +10,39 @@
 	</parent>
 	<groupId>mz.co.restcalculator</groupId>
 	<artifactId>restCalculator</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<name>restCalculator</name>
 	<description>restCalculator</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
+	<developers>
+		<developer>
+			<name>Dário Silvano Maxaieie</name>
+			<email>dariomaxaieie@gmail.com</email>
+		</developer>
+	</developers>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>net.rakugakibox.spring.boot</groupId>
+			<artifactId>logback-access-spring-boot-starter</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.rabbitmq</groupId>
+			<artifactId>amqp-client</artifactId>
+			<version>5.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+			<version>2.5.3</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
